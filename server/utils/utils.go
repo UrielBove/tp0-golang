@@ -27,6 +27,7 @@ func RecibirPaquetes(w http.ResponseWriter, r *http.Request) {
 
 	log.Println("me llego un paquete de un cliente")
 	log.Printf("%+v\n", paquete)
+	//%+v imprime el valor de la variable incluyendo los nombres de los campos
 
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("ok"))
